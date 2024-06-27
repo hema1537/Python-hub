@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+
+template <typename T>
+class Value {
+public:
+    Value(T a) {
+        if (std::isdigit(a)) {
+            std::cout << a << " is a number" << std::endl;
+        } else {
+            std::cout << a << " is not a number" << std::endl;
+        }
+    }
+};
+
+int main() {
+    Value<int> v1(5);
+    Value<char> v2('v');
+    return 0;
+}
