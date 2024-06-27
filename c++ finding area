@@ -1,0 +1,24 @@
+#include <iostream>
+#include <stdexcept> // For std::runtime_error
+
+int main() {
+    int num;
+
+    try {
+        std::cout << "Enter a number: ";
+        std::cin >> num;
+
+        if (num == 0) {
+            throw std::runtime_error("Division by zero!");
+        }
+
+        int result = 10 / num;
+        std::cout << "Result: " << result << std::endl;
+    } catch (const std::runtime_error& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+    } catch (...) { // Catch-all block (optional)
+        std::cerr << "An unexpected error occurred." << std::endl;
+    }
+
+    return 0;
+}
