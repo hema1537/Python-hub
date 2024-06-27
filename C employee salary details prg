@@ -18,3 +18,9 @@ int main() {
 
   return 0;
 }
+
+output:
+Enter basic salary:5000
+hra:2000
+da:1000
+
