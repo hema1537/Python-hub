@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+  float km, m, cm, ft, in;
+
+  printf("Enter The Kilometer: ");
+  scanf("%f", &km);
+
+  m = km * 1000;
+  cm = m * 100;
+  in = cm / 2.54;  // Convert centimeters to inches
+  ft = in / 12;        // Convert inches to feet
+
+  printf("\n KM: %.2f", km);  // Format output with 2 decimal places
+  printf("\n M : %.2f", m);
+  printf("\n CM: %.2f", cm);
+  printf("\n IN: %.2f", in);
+  printf("\n FT: %.2f", ft);
+
+  return 0;
+}
+output 
+enter km:5000
+m:5.00
+cm:5000.00
+in:50000.00
+ft:1968.50
