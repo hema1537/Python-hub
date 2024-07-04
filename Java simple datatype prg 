@@ -1,0 +1,6 @@
+Public class Hello_World{
+Public static void main (string []args){
+Int age=18;
+System.out.println(age);
+}
+}
